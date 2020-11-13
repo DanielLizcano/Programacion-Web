@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloauto.css">
+    <script src="https://kit.fontawesome.com/b2c9760e0c.js" crossorigin="anonymous"></script>
+    <title>chc_coches</title>
+</head>
+<body>
+    <form class="formulario">
+        <h1>Registro</h1>
+        <div class="contenedor">
+            <div class="input contenedor">
+                <input type="text" maxlength="10" name="id_coche" placeholder="Ingrese el código del auto">
+            </div>
+            <div class="input contenedor">
+                <select name="id_movidoa" class="form-control">
+                    <br>
+                    <option value="0">seleccione el tipo de combustible...</option>
+                    <option value="1">Gasolina</option>
+                    <option value="2">Diésel</option>
+                    <option value="2">Bioetanol</option>
+                    <option value="2">Biodiésel</option>
+                    <option value="2">Gas natural</option>
+                </select>
+            </div>
+            <div class="input contenedor">
+                <select name="id_tipocoche" class="form-control">
+                    <br>
+                    <option value="0">seleccione el tipo de auto...</option>
+                    <option value="1">Microauto</option>
+                    <option value="2">Hatchback</option>
+                    <option value="2">Sedan</option>
+                    <option value="2">SUV</option>
+                    <option value="2">Todoterreno</option>
+                    <option value="2">Coupé</option>
+                    <option value="2">Cabrio</option>
+                    <option value="2">Spider</option>
+                    <option value="2">Segmento A-F</option>
+                </select>
+            </div>
+            <div class="input contenedor">
+                <select name="id_estado" class="form-control">
+                    <br>
+                    <option value="0">seleccione el estado del auto...</option>
+                    <option value="1">Nuevo</option>
+                    <option value="2">Bueno</option>
+                    <option value="2">Aceptable</option>
+                    <option value="2">Malo</option>
+                </select>
+            </div>
+            <div class="input contenedor">
+                <select name="id_marca" class="form-control">
+                    <br>
+                    <option value="0">seleccione la marca...</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="2">Chevrolet</option>
+                    <option value="2">Citroën</option>
+                    <option value="2">Ford</option>
+                    <option value="2">Honda</option>
+                    <option value="2">Porshe</option>
+                    <option value="2">Toyota</option>
+                    <option value="2">Peugeot</option>
+                    <option value="2">Kia</option>
+                </select>
+            </div>
+            <div class="input contenedor">
+                <input type="text" maxlength="10" name="id_usr" placeholder="Ingrese el código de usuario">
+            </div>
+            <div class="input contenedor">
+                <input type="text" maxlength="25" name="modelo" placeholder="Ingrese el modelo">
+            </div>
+            <div class="input contenedor">
+                <input type="text" maxlength="25" name="año" placeholder="Ingrese el año">
+            </div>
+            <div class="input contenedor">
+                <textarea class="fondo" name="detalle" rows="10" cols="40" placeholder="Ingrese los detalles"></textarea></textarea>
+            </div>
+            <div class="input contenedor">
+                <input type="text" maxlength="20" name="caja" placeholder="caja">
+            </div>
+            <div class="input contenedor">
+                <input type="text" maxlength="20" name="motor" placeholder="motor">
+            </div>
+            <div class="input contenedor">
+                <label for="FechaPub">Fecha publicación</label>
+                <input type="date" class="fondo" id="start" name="trip-start" placeholder="fecha publicación" value="seleccione fecha"
+                min="2019-01-01" max="2022-12-31">
+            </div>
+            <div class="input contenedor">
+                <input type="text" name="precio" placeholder="precio">
+            </div>
+            <div class="input contenedor">
+                <input type="text" name="moneda" placeholder="Moneda">
+            </div>
+            <div class="input contenedor">
+                <textarea class="fondo" name="descripción 1" rows="10" cols="40" placeholder="Primera descripción"></textarea></textarea>
+            </div>
+            <div class="input contenedor">
+                <textarea class="fondo" name="descripción 2" rows="10" cols="40" placeholder="Segunda descripción"></textarea></textarea>
+            </div>
+            <div class="input contenedor">
+                <textarea class="fondo" name="descripción 3" rows="10" cols="40" placeholder="Tercera descripción"></textarea></textarea>
+            </div>
+            <div class="input contenedor">
+                <textarea class="fondo" name="descripción 4" rows="10" cols="40" placeholder="Cuarta descripción"></textarea></textarea>
+            </div>
+                <input type="submit" value="Registrarse" class="button">
+                <p>Al registrarse acepta las condiciones de uso y política de privacidad</p>
+            </div>
+        </form>
+</body>
+</html>
