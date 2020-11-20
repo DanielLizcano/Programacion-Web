@@ -2,15 +2,21 @@ body
 {
 	font-family: Times New Roman, Helvetica, sans-serif;
 	margin: 15px 300px;
-	background-image:url(../Imagenes/fondoCarr.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-color: dimgrey;
-    image-orientation: center;
+    background-color: rgba(10, 17, 112, 0.582);
+	image-orientation: center;
+	background-size: cover;
     color: #000;
 }
 
-h2
+textarea{
+ height: 200px;
+ width: 800px;
+
+}
+
+
+h1
 {
 	margin: 70px;
 	text-transform: uppercase;
@@ -18,7 +24,7 @@ h2
 	cursor: pointer;
 	font-size: 80px;
 	text-align: center;
-	color: #89A99C;
+	color: #000000;
 }
 
 
@@ -40,25 +46,15 @@ select
 	color: #AAA;
 	outline: none;
 	font-size: 20px;
-	-webkit-border-radius: 22px;
-	-moz-border-radius: 22px;
-	border-radius: 22px;
-}
-
-
-label
-{
-	position: relative;
-	display: inline-block;
-	font-size: 22px;
-    font-weight: 600;
-	color: #DAF0E7;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	border-radius: 24px;
 }
 
 input:hover,
 select:hover
 {
-	background-color: #A7EB87;
+	background-color: #ebcb87;
 	color: #000;
 }
 
@@ -69,9 +65,7 @@ select:focus
 	color: #AAA;
 }
 
-
-
-button
+input.submit
 {
 	position: relative;
 	display: inline-block;
@@ -86,8 +80,16 @@ button
 	cursor: pointer;
 }
 
-button:hover
+label
 {
-	background-color: #8AC2C5;
-	color: #FFF38E;
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+    font-weight: 600;
+	color: #040505;
+}
+
+p
+{
+	text-align: center;
 }
