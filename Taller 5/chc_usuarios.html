@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/b2c9760e0c.js" crossorigin="anonymous"></script>
+    <link  href = " ../CSS/estilo.css " type = " text / css " rel = " stylesheet " >
+
+    <title>Chc_Usuario</title>
+</head>
+<body>
+    <form name="formulario">
+    <h1>Registro</h1>
+    <div class="contenedor">
+        <div class="input contenedor">
+            <i class="fas fa-user-check icon"></i>
+            <input type="text" name="id_usr" placeholder="Ingrese el código del usuario">
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-flag icon"></i>
+            <select name="pais" class="form-control">
+                <br>
+                <option value="0">seleccione un país...</option>
+                <option value="1">Colombia</option>
+                <option value="2">Venezuela</option>
+                <option value="2">Ecuador</option>
+                <option value="2">Perú</option>
+                <option value="2">Chile</option>
+                <option value="2">Argentina</option>
+                <option value="2">Bolivia</option>
+                <option value="2">Uruguay</option>
+                <option value="2">Brasil</option>
+                <option value="2">Paraguay</option>
+            </select>
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" maxlength="25" name="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="input contenedor">
+            <i class="far fa-user icon"></i>
+            <input type="text" maxlength="25" name="apellido" placeholder="Ingrese su apellido">
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <input type="text" maxlength="45" name="direccion" placeholder="Ingrese su dirección">
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-user-circle icon"></i>
+            <input type="text" maxlength="20" name="ccusuario" placeholder="Ingrese su ccusuario" onkeypress="return check(event)" >
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" name="ccpaswd" placeholder="Ingrese su contraseña">
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" name="ccpaswd2" placeholder="Verifique su contraseña">
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" name="email" placeholder="Ingrese su email">
+        </div>
+        <div class="input contenedor">
+            <i class="fas fa-phone icon"></i>
+            <input type="text" maxlength="20" name="teléfono" placeholder="Ingrese su teléfono">
+        </div>
+            <input type="submit" value="Regístrate" class="button" onclick="validacionEnvio()">
+            <p>Al registrarse acepta las condiciones de uso y política de privacidad</p>
+        </div>
+        <div class="project-accordion">
+            <input class="project-input" type="radio" name="project-tabs" id="tab1"/>
+            <label class="project-label" for="tab1">Especificaciones del auto</label>
+            <article class="project-text">
+                <div id="contenedor2" class="project-sub">
+                    <form>
+                        <!--<div class="columns">-->
+                            <div class="field-container">
+                                <div class="field-icon">
+                                    <i class="fas fa-car-alt icon" aria-hidden="true"></i>
+                                    <input type="text" name="marca" placeholder="Marca"> <br/><br/>
+                                </div>       
+                            </div>
+                            <div class="field-container">
+                                <div class="field-icon">
+                                    <i class="fa fa-car fa-lg icon" aria-hidden="true"></i>
+                                    <input type="text" name="estilo" placeholder="Estilo"> <br/><br/>
+                                </div>       
+                            </div>
+                        <!--</div>-->
+                        <!--<div class="columns">-->
+                            <div class="field-container">
+                                <div class="field-icon">
+                                    <i class="fas fa-search-plus icon" aria-hidden="true"></i>
+                                    <input type="text" name="modelo" placeholder="Modelo"> <br/><br/>
+                                    <label>Modelo</label>
+                                </div>       
+                            </div>
+                            <div class="field-container">
+                                <div class="field-icon">
+                                    <i class="fa fa-usd fa-lg icon" aria-hidden="true"></i>
+                                    <label>Precio (Mill)</label><br>
+                                </div>
+                                <input list="tickmarks" type="range" min="50" max="500" class="slider" value="50" id="myRange">
+                                    <datalist id="tickmarks">
+                                    <option value="50" label="50%">50</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                    <option value="250">250</option>
+                                    <option value="300" label="300%">300</option>
+                                    <option value="350">350</option>
+                                    <option value="400">400</option>
+                                    <option value="450">450</option>
+                                    <option value="500" label="500%">500</option>
+                                    </datalist>
+                                <!--<p>Value: <span id="valor"></span></p> -->       
+                            </div>
+                        <!--</div> -->  
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+        </div>
+    </form>
+</body>
+</html>
