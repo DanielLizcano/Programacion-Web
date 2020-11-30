@@ -32,7 +32,7 @@ function validacionApellido(){
 function validacionDirección(){
     let dato = document.formulario.direccion.value;
     if(dato.substring(0,3)!="cll" && dato.substring(0,3)!="cra" && dato.substring(0,2)!="av" && dato.substring(0,3)!="anv" && dato.substring(0,5)!="trans"){
-        alert("Error! dirección sin los requerimientos");
+        alert("Error! Llenar correctamente el campo( ejemplo: cll 9 # 13-12)(debe iniciar con cll, cra, anv, trans)");
         document.formulario.direccion.focus();
         val = 1;
         return 1;
@@ -59,10 +59,10 @@ function validacionCcusuario(){
         document.formulario.ccusuario.focus();
         return 1;
     }
-    let patron=/[\^$.*+?=!:|\\/()\[\]{}]/;
+    let patron=/[\^$.*+?=!:|\\/()\[\]{}]@_'´/;
     let usur = document.formulario.ccusuario.focus();
     if(patron.test(usur)){
-        alert("Error! El campo no debe tener ningun caracter ^ $. * +? =! : | \ / () [] {}'");
+        alert("Error! El campo no debe tener ningun caracter ^ $. * +? =! : | \ / () [] {}'@ _ ");
         document.formulario.ccusuario.focus();
         val = 1;
         return 1;
@@ -118,7 +118,7 @@ function compararContrasena(){
 //Validación correo
 function validacionEmail(){
     lenEmail = document.formulario.email.value.length;
-    if(len<1 || len>200){
+    if(len<1 || len>120){
         alert("Error en el email");
         document.formulario.email.focus();
         return 1;
