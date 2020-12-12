@@ -13,7 +13,7 @@ a{
 
 .alert{
     display: block;
-    padding: 12px 20px;
+    padding: 20px 20px;
     background: #f8d7da;
     color: #721c24;
     margin-bottom: 10px;
@@ -21,13 +21,13 @@ a{
 }
 
 body{
-    background: #f2f2f2;
-    font-family: 'Open Sans',sans-serif;
+    background: #999999;
+    font-family: 'fantasy';
     font-size: 16px;
 }
 
 .contenedor{
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     background: #fff;
     padding: 40px;
@@ -40,7 +40,7 @@ body{
     font-weight: 600;
     text-align: center;
     margin-bottom: 25px;
-    color: #15CF8A;
+    color: #070FB9;
 }
 
 .contenido{
@@ -72,7 +72,7 @@ Estilos info
 }
 
 .info .col .icono{
-    color: #15CF8A;
+    color: #070FB9;
     margin-right: 10px;
 }
 
@@ -91,7 +91,7 @@ Estilos info
     display: flex;
     width: 40px;
     height: 40px;
-    background: #15CF8A;
+    background: #070FB9;
     color: #fff;
     margin: 5px;
     justify-content: center;
@@ -118,9 +118,9 @@ Estilos formulario
     width: 100%;
     margin-bottom: 15px;
     padding: 12px 20px;
-    border: 1px solid #999;
+    border: 1px solid #070FB9;
     color: #999;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'fantasy';
     font-weight: 400;
     outline: 0;
 }
@@ -138,9 +138,9 @@ Estilos formulario
 }
 
 .formulario button{
-    padding: 12px 30px;
+    padding: 15px 50px;
     border: transparent;
-    background: #15CF8A;
+    background: #070FB9;
     color: #fff;
     cursor: pointer;
     float: right;
