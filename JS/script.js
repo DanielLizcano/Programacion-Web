@@ -25,12 +25,12 @@ function llenarDepartamentos(){
 function llenarMunicipios(){
     let select = document.getElementById('departamento');
     let departamento = select.options[select.selectedIndex].value;
-    fetch('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json')
+    fetch('https://https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json')
     .then(response => response.json())
     .then(json => {
         let regiones = json;
         let ciudades=[];
-        let html='';
+        let html='<option value="">Seleccione...</option>';
         regiones.forEach(element => {
             if(element.ciudades==ciudades){
                 ciudades.push(element.ciudades);
